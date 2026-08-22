@@ -1,83 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<section>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <form action method="get">
 
-        <title>Pesquisa Culturama</title>
-    </head>
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
 
-    <body>
+            <legend>Dados Pessoais</legend>
 
-        <header>
-            <h1>Pesquisa Online</h1>
-        </header>
+            <label for="userName">Nome</label>
+            <input
+                type="text"
+                id="userName"
+                name="userName"
+                required>
+            <br><br>
 
-        <section>
+            <label for="userAge">Idade</label>
+            <input
+                type="number"
+                id="userAge"
+                name="userAge"
+                min="12"
+                max="100"
+                required>
+            <br><br>
 
-            <form action method="get">
+            <label for="birthDate">Data de nascimento</label>
+            <input
+                type="date"
+                id="birthDate"
+                name="birthDate">
+            <br><br>
 
-                <fieldset>
+            <label for="userEmail">E-mail</label>
+            <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                required>
+            <br><br>
 
-                    <!-- DADOS PESSOAIS -->
+            <label for="userPhoneNumber">Telefone</label>
+            <input
+                type="tel"
+                id="userPhoneNumber"
+                name="userPhoneNumber"
+                pattern="[0-9]{11}"
+                placeholder="DDD + número sem espaços ou hífen">
+            <br><br>
 
-                    <legend>Dados Pessoais</legend>
+            <label for="userImage">Upload de foto</label>
+            <input
+                type="file"
+                id="userImage"
+                name="userImage"
+                accept="image/*">
 
-                    <label for="userName">Nome</label>
-                    <input
-                        type="text"
-                        name="userName"
-                        required>
-                    <br>
+        </fieldset>
 
-                    <label for="userAge">Idade</label>
-                    <input
-                        type="number"
-                        name="userAge"
-                        min="12"
-                        max="100"
-                        required>
-                    <br>
+        <!-- PERFIL -->
+        <fieldset>
 
-                    <label for="birthDate">Data de nascimento</label>
-                    <input
-                        type="date"
-                        name="birthDate">
-                    <br>
+            <legend>Perfil</legend>
+            <p>Gênero:</p>
 
-                    <label for="userEmail">Email</label>
-                    <input
-                        type="email"
-                        name="userEmail"
-                        required>
-                    <br>
+            <input
+                type="radio"
+                id="feminino"
+                name="userGender"
+                value="Feminino">
 
-                    <label for="userPhoneNumber">Telefone</label>
-                    <input
-                        type="tel"
-                        name="userPhoneNumber"
-                        pattern="[0-9]{11}"
-                        placeholder="DDD + número sem espaços ou hífen">
-                    <br>
+            <label for="feminino">Feminino</label>
 
-                    <label for="userImage">Upload de foto</label>
-                    <input
-                        type="file"
-                        accept="image/*"
-                        name="userImage">
-                    <br>
+            <input
+                type="radio"
+                id="masculino"
+                name="userGender"
+                value="Masculino">
 
-                </fieldset>
+            <label for="masculino">Masculino</label>
 
-                <button type="submit">
-                    Enviar
-                </button>
+            <input
+                type="radio"
+                id="naoInformar"
+                name="userGender"
+                value="Prefiro não informar">
 
-            </form>
+            <label for="naoInformar">Prefiro não informar</label>
 
-        </section>
+        </fieldset>
 
-    </body>
+        <button type="submit">
+            Enviar
+        </button>
 
-</html>
+    </form>
+
+</section>
