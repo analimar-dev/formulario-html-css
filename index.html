@@ -1,99 +1,117 @@
-<section>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <form action method="get">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Usuário</title>
+    </head>
 
-        <!-- DADOS PESSOAIS -->
-        <fieldset>
+    <body>
 
-            <legend>Dados Pessoais</legend>
+        <section>
 
-            <label for="userName">Nome</label>
-            <input
-                type="text"
-                id="userName"
-                name="userName"
-                required>
-            <br><br>
+            <form action method="get">
 
-            <label for="userAge">Idade</label>
-            <input
-                type="number"
-                id="userAge"
-                name="userAge"
-                min="12"
-                max="100"
-                required>
-            <br><br>
+                <!-- DADOS PESSOAIS -->
+                <fieldset>
 
-            <label for="birthDate">Data de nascimento</label>
-            <input
-                type="date"
-                id="birthDate"
-                name="birthDate">
-            <br><br>
+                    <legend>Dados Pessoais</legend>
 
-            <label for="userEmail">E-mail</label>
-            <input
-                type="email"
-                id="userEmail"
-                name="userEmail"
-                required>
-            <br><br>
+                    <label for="userName">Nome</label>
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        required>
+                    <br><br>
 
-            <label for="userPhoneNumber">Telefone</label>
-            <input
-                type="tel"
-                id="userPhoneNumber"
-                name="userPhoneNumber"
-                pattern="[0-9]{11}"
-                placeholder="DDD + número sem espaços ou hífen">
-            <br><br>
+                    <label for="userAge">Idade</label>
+                    <input
+                        type="number"
+                        id="userAge"
+                        name="userAge"
+                        min="12"
+                        max="100"
+                        required>
+                    <br><br>
 
-            <label for="userImage">Upload de foto</label>
-            <input
-                type="file"
-                id="userImage"
-                name="userImage"
-                accept="image/*">
+                    <label for="birthDate">Data de nascimento</label>
+                    <input
+                        type="date"
+                        id="birthDate"
+                        name="birthDate">
+                    <br><br>
 
-        </fieldset>
+                    <label for="userEmail">E-mail</label>
+                    <input
+                        type="email"
+                        id="userEmail"
+                        name="userEmail"
+                        required>
+                    <br><br>
 
-        <!-- PERFIL -->
-        <fieldset>
+                    <label for="userPhoneNumber">Telefone</label>
+                    <input
+                        type="tel"
+                        id="userPhoneNumber"
+                        name="userPhoneNumber"
+                        pattern="[0-9]{11}"
+                        placeholder="DDD + número sem espaços ou hífen">
+                    <br><br>
 
-            <legend>Perfil</legend>
-            <p>Gênero:</p>
+                    <label for="userImage">Upload de foto</label>
+                    <input
+                        type="file"
+                        id="userImage"
+                        name="userImage"
+                        accept="image/*">
 
-            <input
-                type="radio"
-                id="feminino"
-                name="userGender"
-                value="Feminino">
+                </fieldset>
 
-            <label for="feminino">Feminino</label>
+                <!-- PERFIL -->
+                <fieldset>
 
-            <input
-                type="radio"
-                id="masculino"
-                name="userGender"
-                value="Masculino">
+                    <legend>Perfil</legend>
 
-            <label for="masculino">Masculino</label>
+                    <p>Gênero:</p>
 
-            <input
-                type="radio"
-                id="naoInformar"
-                name="userGender"
-                value="Prefiro não informar">
+                    <input
+                        type="radio"
+                        id="feminino"
+                        name="userGender"
+                        value="Feminino">
 
-            <label for="naoInformar">Prefiro não informar</label>
+                    <label for="feminino">Feminino</label>
 
-        </fieldset>
+                    <input
+                        type="radio"
+                        id="masculino"
+                        name="userGender"
+                        value="Masculino">
 
-        <button type="submit">
-            Enviar
-        </button>
+                    <label for="masculino">Masculino</label>
 
-    </form>
+                    <input
+                        type="radio"
+                        id="naoInformar"
+                        name="userGender"
+                        value="Prefiro não informar">
 
-</section>
+                    <label for="naoInformar">Prefiro não informar</label>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </body>
+
+</html>
