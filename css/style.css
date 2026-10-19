@@ -50,6 +50,16 @@ label {
     margin-bottom: 5px;
     margin-bottom: 15px;
     font-weight: bold;
+
+input[type="tel"],
+input[type="file"] {
+    margin-bottom: 0;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 input, select, textarea {
     width: 100%;
